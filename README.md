@@ -40,3 +40,18 @@ And also to this output:
 ```
 
 Please send access to the source and a runnable copy of your app. 
+
+## Technology Used
+* Node
+* NPM
+* JavaScript
+
+I used argv as the only dependency here to process command line arguments. All other code is written by me.
+
+## Usage
+1. Clone repository to your filesystem and change directory to the folder
+2. Run `npm i` to install dependencies
+3. Run command for basic output: 
+```node string-parser.mjs --string "(id, name, email, type(id, name, customFields(c1, c2, c3)), externalId)"```
+4. Run command for sorted output: 
+```node string-parser.mjs --sort --string "(id, name, email, type(id, name, customFields(c1, c2, c3)), externalId)"```
