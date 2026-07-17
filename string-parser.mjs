@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import yargs from "yargs";
 import { hideBin } from 'yargs/helpers';
 
@@ -6,7 +7,10 @@ import mapper from './mapper.js';
 import sortFunction from './sorter.js';
 import buildSubStructure from './structure.js';
 
-const argv = yargs(hideBin(process.argv)).parse()
+const argv = yargs(hideBin(process.argv))
+              .usage('Usage: --string=[stringToParse] optional: --sort')
+              .demandOption(['string'])
+              .parse();
 
 const stringToParse = argv.string;
 const sort = argv.sort;
@@ -18,7 +22,7 @@ const structuredArray = [];
 parsedArray.forEach((item, index) => {
   if (Array.isArray(item)) {
     const last = structuredArray.pop();
-    structuredArray.push(buildSubStructure(last, item))
+    structuredArray.push(buildSubStructure(last, item));
   } else {
     structuredArray.push(item);
   } 
@@ -36,5 +40,4 @@ const output = stringifiedArray.reduce((acc, current) => {
   return acc + currentArray.reduce((c_acc, c_current) => c_acc + c_current);
 });
 
-console.log("#### Output ####")
-console.log(output)
+console.log(output);

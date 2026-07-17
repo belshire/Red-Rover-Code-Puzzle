@@ -52,6 +52,6 @@ I used argv as the only dependency here to process command line arguments. All o
 1. Clone repository to your filesystem and change directory to the folder
 2. Run `npm i` to install dependencies
 3. Run command for basic output: 
-```node string-parser.mjs --string "(id, name, email, type(id, name, customFields(c1, c2, c3)), externalId)"```
+```./string-parser.mjs --string "(id, name, email, type(id, name, customFields(c1, c2, c3)), externalId)"```
 4. Run command for sorted output: 
-```node string-parser.mjs --sort --string "(id, name, email, type(id, name, customFields(c1, c2, c3)), externalId)"```
+```./string-parser.mjs --sort --string "(id, name, email, type(id, name, customFields(c1, c2, c3)), externalId)"```

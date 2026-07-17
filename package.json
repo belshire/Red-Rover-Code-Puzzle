@@ -1,5 +1,5 @@
 {
-  "name": "red-rover-code-puzzle",
+  "name": "belshire-red-rover-code-puzzle",
   "version": "1.0.0",
   "description": "Thank you for your interest in joining our team.  The following coding exercise helps us get a sense for your approach to turning a requirement into code. If you have any questions please reach out.",
   "homepage": "https://github.com/belshire/Red-Rover-Code-Puzzle#readme",
@@ -11,9 +11,9 @@
     "url": "git+https://github.com/belshire/Red-Rover-Code-Puzzle.git"
   },
   "license": "ISC",
-  "author": "",
+  "author": "Blake Elshire",
   "type": "module",
-  "main": "string-formatter.js",
+  "main": "string-parser.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
